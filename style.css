@@ -1,0 +1,561 @@
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+/* ROOT FONT STYLES */
+
+body,html {
+  height: 100%;
+}
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+}
+
+.col-4 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #e8eaed;
+}
+
+.col-8 {
+  height: 100%;
+  float:left;
+  padding-left: 25em;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+/* ==== MAIN CONTENT STYLES ==== */
+
+h3 {
+  text-align: center;
+}
+
+.logo_container {
+  display: block;
+  text-align: center;
+  max-width: 30em;
+  padding-right: 3em;
+}
+
+.logo_container img {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo_container li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav {
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #3b54af;
+}
+
+.social_btn_container {
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+}
+
+.social_btn_container li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.social_btn {
+  margin: 20px 5px 5px 5px;
+  border-radius: 15%;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  float:center;
+}
+
+.home_page {
+  padding-bottom: 1900px;
+}
+
+.guitar_photo {
+  height:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.blue_jam_intro h3 {
+  text-align: center;
+  color: #0dafe5;
+}
+
+.blue_jam_intro p {
+  text-align: center;
+}
+
+.testimonial_header {
+  text-align: center;
+  color: #0dafe5;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.lesson_header {
+  color: #0dafe5;
+  text-align: center;
+}
+
+.lesson_container {
+  width:100%;
+  border-top:1px solid black;
+}
+
+.lesson_instrument {
+  width: 20%;
+  float: left;
+  display: inline-block;
+}
+
+.lesson_instrument h3 {
+  text-align: left;
+}
+
+.lesson_text {
+  width: 80%;
+  float: left;
+  display: inline-block;
+  padding-bottom: 1.5em;
+}
+
+.policy h2 {
+  color: #0dafe5;
+  text-align: center;
+}
+
+.policy p {
+  text-align: center;
+}
+
+.rates h2 {
+  color: #0dafe5;
+  text-align: center;
+}
+
+.rates h5 {
+  text-align: center;
+}
+
+.rates p {
+  text-align: center;
+}
+
+.sale_image {
+  padding: 0 12px 0 0;
+  vertical-align: middle;
+  height: 22px;
+}
+
+.events_page {
+
+}
+
+.events_page h2 {
+  color: #0dafe5;
+  text-align: center;
+}
+
+.recitals_video {
+  padding-left: 2.5em;
+}
+
+.taryn_contact_photo {
+  height:40%;
+  padding: 20px 0 0 20px;
+  float:right;
+}
+
+.contact_buttons_container {
+  width: 100%;
+  display: inline-block;
+  padding-left: 4.6em;
+}
+
+.contact_buttons {
+  padding: 8px;
+  font-size: 18px;
+  margin-bottom: 70px;
+  margin-left: 25px;
+  background-color: #0dafe5;
+  color: #ffffff;
+  border-style: none;
+}
+
+.google_map {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #04ade4;
+}
+
+.footer_content {
+    float: left;
+    margin: 0;
+    width: 30.333%;
+  }
+
+.footer_content p {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  display:inline-block; 
+  width: 400px;
+  padding-left: 25px;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+
+@media only screen and (max-width: 33.75em) {  /* 540px */
+ .col-8 {
+  height: 100%;
+  float:left;
+  padding-left: 0em;
+}
+
+  .col-4 {
+  position: relative;
+  height: 85%;
+  display: block;
+  background-color: #FFFFFF;
+}
+
+.logo_container {
+  display: inline-block;
+  text-align: center;
+  width: 65%;
+  height: 10%;
+  padding-left: 3.2em;
+  }
+
+.logo {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #3b54af;
+}
+
+ .guitar_photo {
+    height:65%;
+    float:left;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.blue_jam_intro h3 {
+  text-align: center;
+  color: #0dafe5;
+  font-size: 22px;
+}
+
+.blue_jam_intro p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.testimonial_header {
+  text-align: center;
+  color: #0dafe5;
+  font-size: 22px;
+}
+
+.testimonial {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.lessons h2 {
+  text-align: center;
+}
+
+.policy h3 {
+  color: #0dafe5;
+  font-size: 22px;
+}
+
+.policy p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.rates h3 {
+  color: #0dafe5;
+  font-size: 22px;
+}
+
+.rates h5 {
+  text-align: center;
+}
+
+.rates p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer_content {
+    float: left;
+    margin: 0;
+    width: auto;
+  }
+
+.footer_content p {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
+  display:inline-block; 
+  width: 350px;
+}
+
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
