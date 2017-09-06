@@ -270,12 +270,12 @@ h3 {
 .lesson_container {
   width:100%;
   border-top:1px solid black;
+  display: inline-block;
 }
 
 .lesson_instrument {
   width: 20%;
   float: left;
-  display: inline-block;
 }
 
 .lesson_instrument h3 {
@@ -285,8 +285,7 @@ h3 {
 .lesson_text {
   width: 80%;
   float: left;
-  display: inline-block;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 
 .policy h2 {
@@ -317,13 +316,62 @@ h3 {
   height: 22px;
 }
 
-.events_page {
-
-}
-
 .events_page h2 {
   color: #0dafe5;
   text-align: center;
+}
+
+.div_table {
+  display: table;
+  width: 100%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.div_row {
+  display: table-row;
+  width: auto;
+  font-weight: bold;
+}
+
+.div_row [class*="div_column"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.div_column_headers {
+  border-bottom: 1px solid #e6e6e6;
+  float: left;
+  text-align: center;
+  padding: 15px 0px 2px 0;
+  width: 15em;
+}
+
+.div_column_headers p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0dafe5;
+}
+
+.div_column {
+  border-bottom: 1px solid #e6e6e6;
+  float: left;
+  text-align: center;
+  padding: 15px 12px 15px 0;
+  width: 16em;
+  font-size: 14px;
+}
+
+.div_column .date {
+  font-size: 15px;
+  font-weight: bold;
+  color: #46339c;
+}
+
+.div_column p {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .recitals_video {
